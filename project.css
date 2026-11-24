@@ -1,0 +1,223 @@
+@font-face {
+    font-family: moderniz;
+    src: url(Moderniz.otf);
+}
+@font-face {
+    font-family: poppins bold;
+    src: url(fonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: poppins regular;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: gtpro;
+    src: url(fonts/GTProeliumSharp.otf);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    
+}
+
+body {
+    background: linear-gradient(to right,#000d20,#012357);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+/* utility classes */
+.glass {
+    background-color: rgb(255,255,255 ,0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255,255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0,0, 0.2);
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.primary {
+    background: linear-gradient(yellow,orange);
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    color: rgb(87, 53, 1);
+    font-family: poppins bold;
+    padding-block: 4px;
+    padding-inline: 18px;
+    text-transform: uppercase;
+}
+.secondary {
+    background-color: transparent;
+    border: 2px solid rgb(255, 217, 0);
+    border-radius: 20px;
+    font-size: 18px;
+    color: rgb(255, 217, 0);
+    font-family: poppins bold;
+    padding-block: 4px;
+    padding-inline: 18px;
+    text-transform: uppercase;
+}
+.primary:active {
+    background: transparent;
+   box-shadow: inset 0 0 0 2px rgb(255, 187, 0);
+}
+.back-sec {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+
+}
+.circle {
+    background-color: #60a5fa;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    cursor: pointer;
+}
+.circle h1 {
+    font-size: 30px;
+    color: #000d20;
+    font-family: poppins bold;
+}
+
+.nav-links li:hover {
+    color: #60a5fa;
+}
+#heading {
+    font-family: moderniz;
+    width: auto
+}
+.header {
+    width: 100%;
+    background-color: #012357;
+    margin-top: 80px;
+}
+.thumbnails {
+    margin-top: 30px;
+    columns: 3;
+    column-gap: 0;
+    max-width: 100%;
+    padding-inline: 0;
+    margin: 0 auto;
+    height: auto;
+}
+.thum {
+    break-inside: avoid;
+    margin: 0;
+    position: relative;
+    overflow: hidden
+}
+.thumimg {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    z-index: 1;
+}
+.display {
+     
+    position: fixed;
+    inset: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#000d20e7;
+    transition: active 1s ease-in;
+  
+}
+.size {
+    width: 80%;
+    height: auto;
+}
+
+.leftarrow {
+    height: 100%;
+    width: 10%;
+    /* background-color: aquamarine; */
+}
+.pic {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+   
+}
+.sizee {
+    width: 90%;
+    height: auto;
+}
+.flip {
+    transform: scaleX(-1);
+}
+.content {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* gap: 80px; */
+}
+.button button {
+    padding-inline: 20px;
+    padding-block: 3px;
+    background-color: transparent;
+    outline: none;
+    border: 3px solid white;
+    cursor: pointer;
+    color: #fff;
+    font-family: moderniz;
+}
+.rotated-content {
+    width: 100%;
+    height: 100%;
+}
+.button {
+    
+    width: 100%;
+    height: 10%;
+}
+.pic img {
+    box-shadow: 0 0 80px black;
+    border: 2px solid #60a5fa;
+}
+.leftarrow img {
+    filter: opacity(20%);
+}
+.thumimg {
+    cursor: pointer;
+}
+@media screen and (max-width:765px) {
+   #heading {
+    font-size: 25px;
+
+   }
+}
+@media screen and (max-width:573px) {
+    .rotated-content {
+        width: 100dvh;
+        position: absolute;
+        height: 100vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+    .thumbnails {
+        columns: 2;
+    }
+   
+}
+@media screen and (max-width:430px) {
+    .thumbnails {
+        columns: 1;
+    }
+}

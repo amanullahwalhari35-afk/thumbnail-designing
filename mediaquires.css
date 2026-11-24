@@ -1,0 +1,290 @@
+@media screen and (max-width:991px) {
+  #youtube {
+    width: 32%;
+  }
+ .hamb {
+  display: flex;
+ }
+    .content-area {
+      height: 400px;
+    }
+    .navbar {
+      justify-content: space-between;
+      padding: 5px;
+      padding-inline: 10px;
+      position: relative;
+    }
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 120%;
+      flex-direction: column;
+      height: 200px;
+      justify-content: space-around;
+      width: 100%;
+      align-items: center;
+
+      /* glass */
+      background-color: #012357;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255,255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.26);
+    border-radius: 12px;
+
+    /* animation */
+    transform: opacity 0.3s ease, transform 0.3s ease;
+    }
+    
+    
+    .menubar {
+      display: flex;
+      width: 18%;
+      justify-content: center;
+      align-items: center;
+    }
+    .menu-icon {
+      width: 40%;
+      height: auto;
+    }
+    .left h3 {
+      font-size: 13px;
+    }
+    .left h1 {
+      font-size: 5rem;
+    }
+    .left p {
+      font-size: 16px;
+    }
+    .left h4 {
+      font-size: 20px;
+    }
+    .primary, .secondary {
+      font-size: 16px;
+      
+    }
+    .buttons {
+      width: 80%;
+    }
+    .block h4 {
+      font-size: 50px;
+    }
+    .box p {
+      font-size: 14px;
+      width: 90%;
+    }
+    .box h5 {
+      font-size: 12px;
+    }
+    .holder {
+      width: 25%;
+    }
+}
+@media screen and (max-width:786px) {
+  .buttons5 {
+    width: 60%;
+  }
+  #youtube {
+    width: 38%;
+  }
+  #ab-details {
+    font-size: 14px;
+  }
+  .sec7 p {
+    font-size: 12px;
+  }
+  .left h3 {
+      font-size: 10px;
+    }
+    .left h1 {
+      font-size: 4rem;
+    }
+    .left p {
+      font-size: 13px;
+    }
+    .left h4 {
+      font-size: 20px;
+    }
+}
+@media screen and (max-width:593px) {
+
+  #youtube {
+    width: 45%;
+  }
+  .content-area {
+    flex-direction: column;
+    height: 650px;
+    
+  }
+  .left {
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .right {
+    height: 50%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .right img {
+    width: 90%;
+    margin: 0;
+  }
+  .buttons {
+    width: 70%;
+    justify-content: space-around;
+  }
+  .left h1,.left h3,.left h4, .left p {
+    margin: 0;
+  }
+.block h4 {
+  font-size: 40px;
+}
+.block p {
+  font-size: 13px;
+}
+.block h2 {
+  font-size: 20px;
+}
+.block {
+  width: 30%;
+}
+.sec4 p {
+  font-size: 12px;
+}
+  .holder {
+    width: 40%;
+  }
+.sec2 {
+ border-top: 2px solid #60a5fa;
+}
+}
+@media screen and (max-width:450px) {
+  /* .content-area {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .sec2 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: none;
+  } */
+  .sec5 {
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+  }
+  .secleft,.secright {
+    width: 100%;
+    height: 50%;
+  }
+  .sec7 p {
+    font-size: 10px;
+  }
+  .navbar {
+    width: 90%;
+  }
+  #brand {
+     font-size: 18px;
+  }
+  .content-area {
+    padding-top: 50px;
+    height: 750px;
+    
+  }
+  .body {
+    background: linear-gradient(to left,#000d20,#012357);
+  }
+  .left {
+    gap: 8px;
+  }
+  .right img {
+    width: 90%;
+    margin-left: 5px;
+  }
+  .left h1 {
+    font-size: 4.5rem;
+  }
+  .sec2 {
+    flex-direction: column;
+    height: 560px;
+    background: linear-gradient(to bottom,#000d20,#012357);
+    padding: 0;
+  }
+.buttons {
+  width: 100%;
+}
+  .line {
+    height: 1px;
+    width: 80%;
+  }
+  .block {
+    width: 100%;
+    height: 40%;
+    
+    
+  }
+  .block  h4 {
+    font-size: 50px;
+  }
+  .block h2 {
+    font-size: 30px;
+  }
+  .sec4 {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 30px;
+    
+  }
+  .box {
+    width: 80%;
+    gap: 10px;
+  }
+ .box p {
+      font-size: 18px;
+      width: 90%;
+      
+    }
+    .box h5 {
+      font-size: 20px;
+    }
+    .holder {
+      width: 15%;
+    }
+    .sec5 h1 {
+      font-size: 23px;
+    }
+    .sec5 {
+      gap: 30px;
+    }
+}
+
+@media screen and (max-width:593px) {
+    .content-area {
+      height: 900px;
+      padding: 0;
+      margin-top: 100px;
+    }
+     .left h3 {
+      font-size: 20px;
+      width: 70%;
+      line-height: 1.2;
+     }
+     .left h1 {
+       width: 90%;
+       line-height: 1.2;
+       font-size: 90px;
+     }
+     .right {
+      align-items: 100%;
+     }
+     .right img {
+      width: 110%;
+     }
+}
+
+@media screen and (max-width:375px) {
+    
+}

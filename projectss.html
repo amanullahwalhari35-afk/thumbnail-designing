@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <title>My thumbnails</title>
+</head>
+<body>
+    
+    <div class="back-sec">
+        <div class="circle flex" id="back"> <h1><</h1></div>
+    </div>
+    </div>
+    <div class="header flex">
+        <h1 id="heading">My Thumbnails</h1>
+    </div>
+    <div class="thumbnails">
+        <div class="thum"><img src="thumbnails/thumb9.jpg" alt="" class="thumimg"></div>
+        <div class="thum"><img src="thumbnails/thumb1.jpg" alt="" class="thumimg"></div>
+        <div class="thum"><img src="thumbnails/thumb2.jpg" alt="" class="thumimg"></div>
+        
+        <div class="thum"><img src="thumbnails/thumb3.jpg" alt="" class="thumimg"></div>
+        <div class="thum"><img src="thumbnails/thumb4.jpg" alt="" class="thumimg"></div>
+        <div class="thum"><img src="thumbnails/thumb5.jpg" alt="" class="thumimg"></div>
+        <div class="thum"><img src="thumbnails/thumb6.jpg" alt="" class="thumimg"></div>
+        <div class="thum"><img src="thumbnails/thumb7.jpg" alt="" class="thumimg"></div>
+        <div class="thum"><img src="thumbnails/thumb10.jpg" alt="" class="thumimg"></div>
+        <div class="thum"><img src="thumbnails/thumb11.jpg" alt="" class="thumimg"></div>
+        <div class="thum"><img src="thumbnails/thumb12.jpg" alt="" class="thumimg"></div>
+        <div class="thum"><img src="thumbnails/thumb13.jpg" alt="" class="thumimg"></div>
+        <div class="thum"><img src="thumbnails/thumb14.jpg" alt="" class="thumimg"></div>
+        <div class="thum"><img src="thumbnails/thumb15.jpg" alt="" class="thumimg"></div>
+        <div class="thum"><img src="thumbnails/thumb16.jpg" alt="" class="thumimg"></div>
+        <div class="thum"><img src="thumbnails/thumb17.jpg" alt="" class="thumimg"></div>
+        <div class="thum"><img src="thumbnails/thumb18.jpg" alt="" class="thumimg"></div>
+        <!-- <div class="thum"><img src="thumbnails/thumb19.jpg" alt="" class="thumimg"></div> -->
+        <div class="thum"><img src="thumbnails/thumb20.jpg" alt="" class="thumimg"></div>
+    </div>
+    <div class="display">
+        <div class="rotated-content">
+        <div class="content">
+            <div class="leftarrow flex left"><img src="arrow.png" class="size"></div>
+        <div class="pic flex"> <img src="thumbnails/thumb9.jpg" class="sizee" id="main-pic"></div>
+        <div class="leftarrow flex flip right"><img src="arrow.png" class="size"></div>
+        <!-- <i class="fa-light fa-chart-simple"></i> -->
+        </div>
+        <div class="button flex">
+            <button  class="back">Back</button>
+        </div>
+        </div>
+    </div>
+    <script src="gallery.js"></script>
+    <script>
+        let returnn = document.getElementById("back");
+console.log(returnn)
+returnn.addEventListener("click", () => {
+    history.back()
+})
+    </script>
+</body>
+</html>
